@@ -18,7 +18,7 @@ class Average {
       gradesNumberArray.push(element);
     }
     const average = this.getAverage(gradesNumberArray);
-    document.getElementById("average").innerHTML = average;
+    document.getElementById("average").innerHTML = average.toFixed(2);
   }
 }
 const average = new Average();
