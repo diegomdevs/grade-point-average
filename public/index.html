@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promedio de notas</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../src/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Calcula tu promedio</h1>
+      <p>¡Esta herramienta te ayudará a calcular tu promedio!</p>
+    </header>
+    <main>
+      <img
+        src="https://pps.whatsapp.net/v/t61.24694-24/159627267_175579221469246_1276257939270694354_n.jpg?ccb=11-4&oh=8f0df5900441b06b85a757a5b5021827&oe=62908C72"
+        alt="5to año"
+        height="200"
+        width="200"
+      />
+
+      <section class="main-form-container">
+        <p>Ingresa tus notas separadas por comas aquí</p>
+        <form action="">
+          <label class="form--grades" for="grades">
+            <input
+              required
+              id="grades"
+              name="grades"
+              type="text"
+              placeholder="20, 20, 20, 20, 20"
+            />
+          </label>
+          <label for="calculate" class="form--calculate">
+            <input
+              type="button"
+              value="¡Clickea aquí para calcular!"
+              id="calculate"
+              name="calculate"
+              onclick="average.onClick()"
+            />
+          </label>
+        </form>
+      </section>
+      <section class="main-avarage-container">
+        <h2>Tu promedio es</h2>
+        <h2 id="average"></h2>
+      </section>
+    </main>
+  </body>
+</html>
